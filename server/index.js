@@ -16,7 +16,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
 
 
-
+app.use('/api/auth', require('./routes/authRoutes'));
 
 
 
