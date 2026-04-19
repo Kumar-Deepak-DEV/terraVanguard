@@ -17,8 +17,8 @@ app.use(cookieParser());
 
 
 app.use('/api/auth', require('./routes/authRoutes'));
+app.use('/api/users', require('./routes/userRoutes'));
 app.use('/api/events', require('./routes/eventRoutes'));
-
 
 
 
