@@ -20,6 +20,7 @@ app.use('/api/auth', require('./routes/authRoutes'));
 app.use('/api/users', require('./routes/userRoutes'));
 app.use('/api/ideas', require('./routes/ideaRoutes'));
 app.use('/api/events', require('./routes/eventRoutes'));
+app.use('/api/hall-of-fame', require('./routes/hallOfFameRoutes'));
 
 
 
