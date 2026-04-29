@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-terra-dark text-terra-light font-sans antialiased overflow-x-hidden;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display tracking-tight;
+  }
+}
+
+@layer components {
+  .glass-card {
+    @apply bg-terra-darker/60 backdrop-blur-lg border border-terra-neon/20 rounded-2xl shadow-[0_0_15px_rgba(0,255,136,0.1)];
+  }
+  
+  .glass-card:hover {
+    @apply border-terra-neon/50 shadow-[0_0_25px_rgba(0,255,136,0.2)] transition-all duration-300;
+  }
+
+  .btn-primary {
+    @apply relative inline-flex items-center justify-center px-6 py-3 font-semibold text-terra-dark bg-terra-neon rounded-lg overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-[0_0_20px_rgba(0,255,136,0.4)];
+  }
+
+  .btn-secondary {
+    @apply px-6 py-3 font-semibold text-terra-neon border border-terra-neon rounded-lg hover:bg-terra-neon/10 transition-all duration-300 hover:shadow-[0_0_15px_rgba(0,255,136,0.2)];
+  }
+
+  .nav-link {
+    @apply text-terra-light/80 hover:text-terra-neon transition-colors duration-200 font-medium;
+  }
+  
+  .input-field {
+    @apply w-full bg-terra-darker/50 border border-terra-stone rounded-lg px-4 py-3 text-white placeholder-gray-500 focus:outline-none focus:border-terra-neon focus:ring-1 focus:ring-terra-neon transition-all duration-200;
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #050806;
+}
+::-webkit-scrollbar-thumb {
+  background: #10b981;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #00ff88;
+}
