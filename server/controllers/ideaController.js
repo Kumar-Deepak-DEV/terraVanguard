@@ -1,5 +1,7 @@
 const Idea = require('../models/Idea');
 const User = require('../models/User');
+const Comment = require('../models/Comment');
+const Notification = require('../models/Notification');
 
 exports.getIdeas = async (req, res) => {
     try {
@@ -68,7 +70,9 @@ exports.upvoteIdea = async (req, res) => {
 exports.deleteIdea = async (req, res) => {
     try {
         await Idea.findByIdAndDelete(req.params.id);
-        res.json({ message: 'Idea deleted' });
+        await Comment.deleteMany({ idea: req.params.id });
+        await Notification.deleteMany({ ideaId: req.params.id });
+        res.json({ message: 'Idea, related chats, and notifications deleted' });
     } catch (error) {
         res.status(500).json({ message: error.message });
     }
@@ -87,8 +91,7 @@ exports.approveIdea = async (req, res) => {
     }
 };
 
-const Comment = require('../models/Comment');
-const Notification = require('../models/Notification');
+
 
 exports.getComments = async (req, res) => {
     try {
