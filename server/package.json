@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "A backend for terra vanguard team' website",
   "license": "ISC",
-  "author": "",
+  "author": "Deepak Kumar",
   "type": "commonjs",
   "main": "index.js",
   "scripts": {
