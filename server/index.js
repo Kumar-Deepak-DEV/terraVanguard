@@ -10,7 +10,7 @@ connectDB();
 const app = express();
 
 // Middleware
-app.use(cors({ origin: ['http://localhost:5173', 'http://localhost:5174', 'https://team-terra.vercel.app'], credentials: true }));
+app.use(cors({ origin: ['http://localhost:5173', 'http://localhost:5174', 'https://team-terra.vercel.app', 'https://terra-vanguard.vercel.app'], credentials: true }));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
@@ -35,7 +35,7 @@ const { Server } = require('socket.io');
 const server = http.createServer(app);
 const io = new Server(server, {
     cors: {
-        origin: ['http://localhost:5173', 'http://localhost:5174', 'https://team-terra.vercel.app'],
+        origin: ['http://localhost:5173', 'http://localhost:5174', 'https://team-terra.vercel.app', 'https://terra-vanguard.vercel.app'],
         methods: ["GET", "POST", "PUT", "DELETE"],
         credentials: true
     }
