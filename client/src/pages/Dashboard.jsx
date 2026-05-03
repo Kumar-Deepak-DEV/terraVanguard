@@ -3,7 +3,7 @@ import { Helmet } from 'react-helmet-async';
 import { AuthContext } from '../context/AuthContext';
 import axios from 'axios';
 import { motion } from 'framer-motion';
-import { Lightbulb, ThumbsUp, Calendar, ArrowRight, Activity } from 'lucide-react';
+import { Lightbulb, ThumbsUp, Calendar, ArrowRight, Activity,Shield } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const Dashboard = () => {
@@ -55,7 +55,7 @@ const Dashboard = () => {
     const statCards = [
         { title: 'My Proposals', value: stats.myIdeasCount, icon: Lightbulb, color: 'text-yellow-400', bg: 'bg-yellow-400/10' },
         { title: 'Upvotes Given', value: stats.myUpvotesCount, icon: ThumbsUp, color: 'text-blue-400', bg: 'bg-blue-400/10' },
-        { title: 'Rank Level', value: 'Operative', icon: Activity, color: 'text-terra-neon', bg: 'bg-terra-neon/10' }
+        { title: 'Rank Level', value: 'Operative', icon: Shield, color: 'text-terra-neon', bg: 'bg-terra-neon/10' }
     ];
 
     return (

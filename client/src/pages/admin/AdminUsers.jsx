@@ -86,7 +86,7 @@ const AdminUsers = () => {
         } catch (error) { toast.error(error.response?.data?.message || "Rank update failed"); }
     };
 
-    const filteredUsers = users.filter(u => u.username.toLowerCase().includes(searchTerm.toLowerCase()) || (u.name && u.name.toLowerCase().includes(searchTerm.toLowerCase())));
+    const filteredUsers = users.filter(u => (u.username && u.username.toLowerCase().includes(searchTerm.toLowerCase())) || (u.name && u.name.toLowerCase().includes(searchTerm.toLowerCase())));
 
     return (
         <div>
