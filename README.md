@@ -10,6 +10,8 @@ Built to give every core member a voice, a stage, and a direct line to the actio
 [![Live Demo](https://img.shields.io/badge/🚀%20Live%20Demo-terra--vanguard.vercel.app-39ff14?style=for-the-badge)](https://terra-vanguard.vercel.app)
 [![Backend](https://img.shields.io/badge/Backend-Render-46E3B7?style=for-the-badge&logo=render)](https://terravanguard.onrender.com)
 [![API Docs](https://img.shields.io/badge/API%20Docs-Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white)](https://documenter.getpostman.com/view/50840847/2sBXqKp11y)
+[![YouTube](https://img.shields.io/badge/▶%20Watch%20Demo-YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://youtu.be/ksyEEYLoHFU)
+[![Figma](https://img.shields.io/badge/🎨%20Figma%20Design-View%20Prototype-F24E1E?style=for-the-badge&logo=figma&logoColor=white)](https://www.figma.com/design/zoPK3ZqCCAqQLczxujqp42/Untitled?node-id=190-14&t=b2pzU7l365UKZMVR-1)
 
 </div>
 
