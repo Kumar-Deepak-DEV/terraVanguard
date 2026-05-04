@@ -1,0 +1,16 @@
+# robots.txt — Terra Vanguard Portal
+# https://terra-vanguard.vercel.app
+
+User-agent: *
+Allow: /
+Allow: /events
+Allow: /hall-of-fame
+
+# Block private / admin routes from crawlers
+Disallow: /dashboard
+Disallow: /ideas
+Disallow: /profile
+Disallow: /admin
+Disallow: /admin/
+
+Sitemap: https://terra-vanguard.vercel.app/sitemap.xml
